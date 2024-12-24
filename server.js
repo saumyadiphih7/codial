@@ -9,7 +9,10 @@ dotenv.config()
 
 const app = express();
 
+// import routes
 
+const router = require("./routes/index.js")
+app.use("/",router)
 
 
 
