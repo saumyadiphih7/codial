@@ -1,5 +1,7 @@
 const home = async (req, res) => {
-  return res.send(`<h1>Home Page</h1>`)
+  return res.render("home.ejs", {
+    title:"Home"
+  })
 }
 
 const creator = async (req, res) => {

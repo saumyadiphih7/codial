@@ -4,6 +4,8 @@ const profile=async(req,res)=>{
 
 
 const posts = async (req, res) => {
-  return res.send(`<h1>Users posts</h1>`)
+  return res.render("post.ejs", {
+    title:"posts"
+  })
 }
 module.exports={profile,posts}
