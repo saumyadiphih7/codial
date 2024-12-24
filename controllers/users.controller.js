@@ -8,4 +8,5 @@ const posts = async (req, res) => {
     title:"posts"
   })
 }
+
 module.exports={profile,posts}
