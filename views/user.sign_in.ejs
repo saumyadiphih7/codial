@@ -1,0 +1,12 @@
+<%- include("layout.ejs") %> 
+<%- include ("header.ejs") %>
+
+<h1>Sign in page</h1>
+
+<form action="/users/create-session" method="post">
+  <input type="email" name="email" placeholder="Your email" required />
+  <input type="password" name="password" placeholder="Your password" required />
+
+  <button type="submit">Sign In</button>
+  <%- include("footer.ejs") %>
+</form>
